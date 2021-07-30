@@ -106,7 +106,6 @@ resource "azurerm_virtual_machine" "catapp" {
   name                = "${var.prefix}-meow"
   Department          = "devops"
   Billable            = "true"
-  timestamp           = "test"
   location            = var.location
   resource_group_name = azurerm_resource_group.myresourcegroup.name
   vm_size             = var.vm_size
